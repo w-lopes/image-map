@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>.:: ImageMap ::.</title>
+		<link rel='stylesheet' type='text/css' href='css/index.css'/>
+	</head>
+	<body>
+		<div id="top">
+			<button id="new_img" title="Carregar nova imagem">Abrir Imagem</button>
+			<button id="editing_mode" title="Modo de edição">
+				<img src="img/cursor.png">
+			</button>
+			<input type="file" id="file" hidden/>
+			<input type="file" id="load" hidden/>
+			<button id="download" title="Baixar arquivo HTML com imagem e mapeamento">Baixar HTML</button>
+			<button id="load_file" title="Carregar arquivo HTML salvo com mapeamento">Carregar HTML</button>
+			<input type="hidden" id="template" value="<!DOCTYPE html>
+<head>
+	<meta charset='UTF-8'/>
+</head>
+<body>
+	<img border=0 usemap='#areas' src='$base64'/>
+	<map name='areas'>
+$areas	</map>
+</body>"/>
+		</div>
+		<center>
+			<img src="about:blank" alt="Imagem" id="image" usemap="#areas"/>
+		</center>
+		<map id="areas" name="areas"></map>
+		<script type='text/javascript' src='js/jquery.js'></script>
+		<script type='text/javascript' src='js/jquery.maphilight.min.js'></script>
+		<script type='text/javascript' src='js/Blob.js'></script>
+		<script type='text/javascript' src='js/FileSaver.js'></script>
+		<script type='text/javascript' src='js/index.js'></script>
+	</body>
+</html>

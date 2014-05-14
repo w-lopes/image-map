@@ -1,0 +1,83 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background-color: #EFEFEF;
+}
+
+#top{
+	background: #9B9B9B;
+	box-shadow: inset 0px -10px 10px 10px #757575;
+	padding: 5px;
+}
+
+#editing_mode{
+	vertical-align: top;
+	width: 50px;
+	background: #9B9B9B;
+	border: 2px solid #656565;
+	box-shadow: inset 0px -6px 15px 5px #73787f;
+}
+
+.editing{
+	background: #99ff66 !important;
+	border: 2px solid #00B600 !important;
+	box-shadow: inset 0px -6px 15px 5px #00B600 !important;
+}
+
+#download, #load_file{
+	float: right;
+}
+
+#image{
+	background-color: #FFFFFF;
+	display: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-moz-user-drag: none;
+}
+
+button{
+	margin: 0px;
+	height: 35px;
+	width: 160px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #FFFFFF;
+	background: #2576B4;
+	border-radius: 15px;
+	border: 2px solid #003399;
+	text-shadow: 1px 1px #003399;
+	box-shadow: inset 0px -6px 15px 5px #003399;
+}
+
+button:hover{
+	background: #3366ff;
+	border: 2px solid #0000CC;
+	box-shadow: inset 0px -6px 15px 5px #0000CC;
+}
+
+#load_file{
+	border-radius: 15px 0px 0px 15px;
+}
+
+#download{
+	border-radius: 0px 15px 15px 0px;
+}
+
+center div{
+	background-color: #FFFFFF !important;
+}
+
+area{
+	cursor: default;
+}
+
+[hidden]{
+	display: none;
+}
